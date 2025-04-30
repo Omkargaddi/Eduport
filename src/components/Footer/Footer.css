@@ -1,0 +1,14 @@
+
+#footer{
+    background-color:var(--navbar-secondary);
+    width: 100%;
+}
+#footer div{
+    color:var(--text-color);
+}
+#footer a{
+    color:var(--text-color);
+}
+#footerlogo{
+    width: 43px;
+}

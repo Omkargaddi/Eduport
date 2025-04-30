@@ -1,0 +1,47 @@
+
+
+:root{
+    --base-color: white;
+    --base-variant: #e8e9ed;
+    --text-color: #111528;
+    --secondary-text: #464a5a;
+    --primary-blue: #cadcfc;
+    --secondary-blue: #00246b;
+    --navbar-primary:#00246b;
+    --navbar-secondary:#cadcfc;
+}
+.darkmode{
+    --base-color: #070b1d;
+    --base-variant: #1b213a;
+    --text-color: #ffffff;
+    --secondary-text: #cad0eb;
+    --primary-blue: #00246b;
+    --secondary-blue: #1e64dc;
+    --navbar-primary:#00203d;
+    --navbar-secondary:#537aaa;
+}
+.wmain{
+    background-color: var(--base-color);
+}
+.btn{
+    margin: 10px;
+}
+.workForm{
+    width: 500px;
+    height: 800px;
+    background-color: var(--base-variant);
+    padding: 30px;
+}
+.wmain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    margin-right: 100px;
+}
+
+.form-label{
+    color: var(--text-color);
+}

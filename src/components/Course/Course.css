@@ -1,0 +1,39 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--base-color);
+}
+.card {
+  margin: 20px 20px;
+}
+.card:hover {
+  /* box-shadow: 1px 1px 20px 0px; */
+  scale: 104%;
+}
+.card-body {
+  background-color: var(--base-variant);
+}
+.card-body h5 {
+  color: var(--text-color);
+}
+.card-body p {
+  color: var(--secondary-text);
+}
+
+.submain-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  margin: 30px 0px;
+}
+
+.main-container h3 {
+  background-color: var(--navbar-secondary);
+  color: var(--text-color);
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 10px;
+}

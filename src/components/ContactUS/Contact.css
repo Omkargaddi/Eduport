@@ -1,0 +1,105 @@
+:root {
+  --base-color: white;
+  --base-variant: #e8e9ed;
+  --text-color: #111528;
+  --secondary-text: #464a5a;
+  --primary-blue: #cadcfc;
+  --secondary-blue: #00246b;
+  --navbar-primary: #00246b;
+  --navbar-secondary: #cadcfc;
+}
+.darkmode {
+  --base-color: #070b1d;
+  --base-variant: #1b213a;
+  --text-color: #ffffff;
+  --secondary-text: #cad0eb;
+  --primary-blue: #00246b;
+  --secondary-blue: #1e64dc;
+  --navbar-primary: #00203d;
+  --navbar-secondary: #537aaa;
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+
+  background-color: var(--base-color);
+}
+.head h3 {
+  background-color: var(--navbar-secondary);
+  color: var(--text-color);
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.main-cnt {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--base-color);
+}
+.card5 {
+  width: 45vw;
+  margin: 10px;
+}
+.sub-cnt {
+  width: 45vw;
+  margin: 10px;
+}
+#checkbox {
+  font-size: 12px;
+}
+.input-group {
+  margin: 10px;
+}
+.form-select {
+  margin: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .main-cnt {
+    flex-direction: column;
+  }
+  .card5 {
+    width: 500px;
+  }
+  .sub-cnt {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 615px) {
+  .head h3 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main-cnt {
+    flex-direction: column;
+  }
+  .head h3 {
+    font-size: 20px;
+  }
+  .card5 {
+    width: 300px;
+  }
+  .sub-cnt {
+    width: 300px;
+  }
+}
+
+.card-body {
+  background-color: var(--base-variant);
+}
+.card-body h5 {
+  color: var(--text-color);
+}
+.card-body p {
+  color: var(--secondary-text);
+}
+.link {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}

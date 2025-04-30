@@ -1,0 +1,80 @@
+
+:root{
+  --base-color: white;
+  --base-variant: #e8e9ed;
+  --text-color: #111528;
+  --secondary-text: #464a5a;
+  --primary-blue: #cadcfc;
+  --secondary-blue: #00246b;
+  --testi-box:#e5eaf4;
+  --navbar-primary:#00246b;
+  --navbar-secondary:#cadcfc;
+}
+.darkmode{
+  --base-color: #070b1d;
+  --base-variant: #1b213a;
+  --text-color: #ffffff;
+  --secondary-text: #cad0eb;
+  --primary-blue: #00246b;
+  --secondary-blue: #1e64dc;
+  --testi-box:#151a25;
+  --navbar-primary:#00203d;
+  --navbar-secondary:#537aaa;
+}
+
+.card {
+    margin: 15px;
+  }
+  .card-body {
+    background-color: var(--base-variant);
+  }
+  .card-img {
+    display: flex;
+    justify-content: center;
+    background-color: var(--base-variant);
+  }
+  .card-img img {
+    width: 96px;
+    height: 96px;
+    margin-top: 15px;
+    border-radius: 50%;
+  }
+  .card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-text h5 {
+    color: var(--text-color);
+  }
+  .card-text h6 {
+    color: var(--secondary-text);
+  }
+  .card-btn button {
+    margin-top: 5px;
+  }
+  .card:hover {
+    /* box-shadow: 1px 1px 20px 0px; */
+    scale: 104%;
+  }
+
+
+  .head {
+    display: flex;
+    justify-content: center;
+  }
+  .head h3 {
+    background-color: var(--navbar-secondary);
+    color: var(--text-color);
+    margin-top: 10px;
+    padding: 8px;
+    border-radius: 10px;
+  }
+
+  .tutorial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--base-color);
+  }

@@ -1,0 +1,93 @@
+:root {
+  --base-color: white;
+  --base-variant: #e8e9ed;
+  --text-color: #111528;
+  --secondary-text: #464a5a;
+  --primary-blue: #cadcfc;
+  --secondary-blue: #00246b;
+  --navbar-primary: #00246b;
+  --navbar-secondary: #cadcfc;
+}
+.darkmode {
+  --base-color: #070b1d;
+  --base-variant: #1b213a;
+  --text-color: #ffffff;
+  --secondary-text: #cad0eb;
+  --primary-blue: #00246b;
+  --secondary-blue: #1e64dc;
+  --navbar-primary: #00203d;
+  --navbar-secondary: #537aaa;
+}
+
+#main-nav {
+  background-color: var(--navbar-primary);
+}
+.toggler1 i {
+  color: white;
+}
+.subheader-right {
+  margin-right: 30px;
+}
+.profile {
+  border: 2px solid var(--text-color);
+  border-radius: 50%;
+}
+.profile i {
+  color: var(--text-color);
+}
+.sub-header {
+  display: flex;
+  background-color: var(--navbar-secondary);
+  align-items: center;
+  justify-content: space-between;
+}
+#navbar {
+  background-color: var(--navbar-secondary);
+  height: 80px;
+  top: 80px; /* if there's a header above it */
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+}
+.nav-item a {
+  color: var(--text-color);
+  font-weight: 400;
+}
+/* .nav-item:hover{
+    background-color: var(--base-variant);
+    border-radius: 20px;
+} */
+.Search {
+  display: flex;
+}
+
+#content-drop {
+  background-color: var(--navbar-secondary);
+}
+
+.logo a img {
+  width: 220px;
+}
+#drop {
+  background-color: var(--navbar-secondary);
+}
+#drop h5 {
+  color: var(--text-color);
+}
+#drop span {
+  color: var(--secondary-text);
+}
+#theme-switch {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background-color: var(--navbar-secondary);
+  border: 2px solid var(--text-color);
+}
+#theme-switch svg {
+  fill: var(--text-color);
+}
