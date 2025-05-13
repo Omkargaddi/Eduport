@@ -1,8 +1,8 @@
 import React from "react";
 import "./Tutorial.css";
+import { NavLink } from "react-router-dom";
 
-
-const CardTut = ({ cardtut }) => {
+const CardTut = ({ cardtut,ok }) => {
   return (
     <>
       <div className="card" style={{ width: "14rem", border: " none" }}>
@@ -12,9 +12,10 @@ const CardTut = ({ cardtut }) => {
           </div>
           <div className="card-text">
             <h5 className="card-title">{cardtut.name}</h5>
-            <button type="button" className="btn btn-primary">
-              Start Learning
-            </button>
+            
+            <NavLink className="btn btn-primary" to={ok ? "/course2" : "/login"} role="button">
+            Start Learning
+                      </NavLink>
           </div>
         </div>
       </div>

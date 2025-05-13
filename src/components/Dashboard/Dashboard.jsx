@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState,useNavigate } from "react";
 import {
   randomizeAttendance,
   renderCalendar,
@@ -6,7 +6,7 @@ import {
 } from "./Dashboard.js";
 import "./Dashboard.css";
 
-const Dashboard = () => {
+const Dashboard = ({ok,setOk}) => {
   const [currentMonth, setCurrentMonth] = useState(0);
 
   const MIN_MONTH = 0;
@@ -29,6 +29,11 @@ const Dashboard = () => {
   useEffect(() => {
     renderCalendar(currentMonth);
   }, [currentMonth]);
+  const handleClick = () => { 
+    setOk(false);
+    localStorage.setItem("ok", "false");
+    window.location.href = "/"; 
+  }
 
   return (
     <>
@@ -139,6 +144,11 @@ const Dashboard = () => {
             </li>
           </ul>
         </div>
+        <div className="logout-container">
+  <button className="logout-button" onClick={handleClick}>
+    <i className="fas fa-sign-out-alt"></i> Logout
+  </button>
+</div>
       </div>
     </>
   );

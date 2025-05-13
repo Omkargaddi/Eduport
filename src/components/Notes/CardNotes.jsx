@@ -1,7 +1,8 @@
 import React from "react";
 import "./Notes.css";
+import { NavLink } from "react-router-dom";
 
-const CardNotes = ({ note }) => {
+const CardNotes = ({ note,ok }) => {
   return (
     <>
       <div className="card" style={{ width: "14rem", border: " none" }}>
@@ -14,12 +15,20 @@ const CardNotes = ({ note }) => {
             <h6 className="card-subtitle mb-2 ">Download Notes Here</h6>
           </div>
           <div className="card-btn">
-            <button type="button" className="btn btn-primary">
-              PDF Notes
-            </button>
-            <button type="button" className="btn btn-primary">
+            <NavLink
+              className="btn btn-primary"
+              to={ok ? "/course2" : "/login"}
+              role="button"
+            >
+               PDF Notes
+            </NavLink>
+            <NavLink
+              className="btn btn-primary"
+              to={ok ? "/course2" : "/login"}
+              role="button"
+            >
               Chapterwise Notes
-            </button>
+            </NavLink>
           </div>
         </div>
       </div>

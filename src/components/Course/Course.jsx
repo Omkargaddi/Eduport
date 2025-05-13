@@ -4,20 +4,20 @@ import { premiumCourseData, freeCourseData } from "../../utils/data";
 import Cardp from "../Course/Cardp";
 import Cardf from "../Course/Cardf";
 
-const Course = () => {
+const Course = ({ok}) => {
   return (
     <>
       <section className="main-container">
         <h3>Premium Courses</h3>
         <div className="submain-container">
           {premiumCourseData.map((val) => {
-            return <Cardp val={val} key={val.id} />;
+            return <Cardp val={val} key={val.id} ok={ok}/>;
           })}
         </div>
         <h3>Free Courses</h3>
         <div className="submain-container">
           {freeCourseData.map((val) => {
-            return <Cardf val={val} key={val.id} />;
+            return <Cardf val={val} key={val.id} ok={ok}/>;
           })}
         </div>
       </section>

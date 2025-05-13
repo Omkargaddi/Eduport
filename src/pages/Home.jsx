@@ -6,7 +6,7 @@ import pyp from "../assets/home/py-problems.jpg";
 import "./Home.css";
 import { NavLink } from "react-router-dom";
 
-const Home = () => {
+const Home = ({ok}) => {
   return (
     <>
       <div className="main-container">
@@ -60,9 +60,9 @@ const Home = () => {
                 and related concepts. It has videos that will provide you with a
                 proper explanation of the program and its logic.
               </p>
-              <a href="#" className="btn btn-primary">
+              <NavLink className="btn btn-primary" to={ok ? "/course2" : "/login"} role="button">
                 Start Watching
-              </a>
+              </NavLink>  
             </div>
           </div>
 
@@ -76,9 +76,9 @@ const Home = () => {
                 Paradigm, then this course is for you. In this you'll learn
                 about objects, classes and much more in Python language.
               </p>
-              <a href="#" className="btn btn-primary">
+              <NavLink className="btn btn-primary" to={ok ? "/course2" : "/login"} role="button">
                 Start Watching
-              </a>
+              </NavLink>  
             </div>
           </div>
 
@@ -92,9 +92,13 @@ const Home = () => {
                 precise course, so if you have a couple of minutes or an hour,
                 just get started. This course will surely add some value.
               </p>
-              <a href="#" className="btn btn-primary">
+              {/* <a href="#" className="btn btn-primary">
                 Start Watching
-              </a>
+              </a> */}
+              <NavLink className="btn btn-primary" to={ok ? "/course2" : "/login"} role="button">
+                Start Watching
+              </NavLink>  
+
             </div>
           </div>
         </div>

@@ -1,6 +1,7 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
-const CardHandbook = ({ handbook }) => {
+const CardHandbook = ({ handbook,ok }) => {
   return (
     <>
       <div className="card" style={{ width: "14rem", border: " none" }}>
@@ -11,9 +12,10 @@ const CardHandbook = ({ handbook }) => {
           <div className="card-text">
             <h5 className="card-title">{handbook.name}</h5>
             <h6 className="card-subtitle mb-2 ">Download Handbooks Here</h6>
-            <button type="button" className="btn btn-primary">
-              Download
-            </button>
+            
+            <NavLink className="btn btn-primary" to={ok ? "/course2" : "/login"} role="button">
+            Download
+                      </NavLink>
           </div>
         </div>
       </div>

@@ -2,7 +2,7 @@ import React from "react";
 import "./Course.css";
 import { NavLink } from "react-router-dom";
 
-const Cardf = ({ val }) => {
+const Cardf = ({ val,ok }) => {
   return (
     <>
       <div className="card" style={{ width: "18rem", border: " none" }}>
@@ -10,9 +10,12 @@ const Cardf = ({ val }) => {
         <div className="card-body">
           <h5 className="card-title">{val.name}</h5>
           <p className="card-text">{val.des}</p>
-          <NavLink className="btn btn-primary" to={"/" + val.link}>
+          {/* <NavLink className="btn btn-primary" to={"/" + val.link}>
             Start Watching
-          </NavLink>
+          </NavLink> */}
+          <NavLink className="btn btn-primary" to={ok ? "/course2" : "/login"} role="button">
+          Start Watching
+                      </NavLink>
         </div>
       </div>
     </>

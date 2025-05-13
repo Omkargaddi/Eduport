@@ -9,7 +9,7 @@ import {
   downloadHandbookData,
 } from "../../utils/data";
 
-const Notes = () => {
+const Notes = ({ok}) => {
   return (
     <>
       <div className="main-container">
@@ -19,7 +19,7 @@ const Notes = () => {
         </div>
         <div className="notes">
           {downloadNotesData.map((note) => {
-            return <CardNotes note={note} key={note.id} />;
+            return <CardNotes note={note} key={note.id} ok={ok}/>;
           })}
         </div>
 
@@ -28,7 +28,7 @@ const Notes = () => {
         </div>
         <div className="notes">
           {downloadCheatSheetData.map((cheet) => {
-            return <CardCheet cheet={cheet} key={cheet.id} />;
+            return <CardCheet cheet={cheet} key={cheet.id} ok={ok} />;
           })}
         </div>
 
@@ -37,7 +37,7 @@ const Notes = () => {
         </div>
         <div className="notes">
           {downloadHandbookData.map((handbook) => {
-            return <CardHandbook handbook={handbook} key={handbook.id} />;
+            return <CardHandbook handbook={handbook} key={handbook.id} ok={ok} />;
           })}
         </div>
       </div>
